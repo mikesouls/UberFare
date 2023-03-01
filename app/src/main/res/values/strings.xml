@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">UberFare</string>
+    <string name="generateEstimate">Estimate Uber Cost</string>
+    <string-array name="carList">
+        <item>Request Smart Car</item>
+        <item>Request Sedan</item>
+        <item>Request Minivan</item>
+    </string-array>
+</resources>
