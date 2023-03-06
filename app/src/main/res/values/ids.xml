@@ -7,4 +7,6 @@
     <item type="id" name="requestCar"/>
     <item type="id" name="distanceToTravel"/>
     <item type="id" name="totalCost"/>
+    <item type="id" name="driverBox"/>
+    <item type="id" name="randomETA"/>
 </resources>

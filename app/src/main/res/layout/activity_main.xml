@@ -10,7 +10,7 @@
         android:id="@+id/textView"
         android:layout_width="252dp"
         android:layout_height="70dp"
-        android:text="Uber Fare"
+        android:text="@string/app_name"
         android:textAlignment="center"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
