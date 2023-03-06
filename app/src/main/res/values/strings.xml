@@ -1,9 +1,20 @@
 <resources>
     <string name="app_name">UberFare</string>
+    <string name="distanceInput">How far are we going?</string>
     <string name="generateEstimate">Estimate Uber Cost</string>
     <string-array name="carList">
         <item>Request Smart Car</item>
         <item>Request Sedan</item>
         <item>Request Minivan</item>
     </string-array>
+    <string name="acceptRide">Request Ride Now</string>
+    <string name="rejectRide">Go Back to Beginning</string>
+    <string name="imageDescription">A picture of the Car the User Chose</string>
+    <string-array name="measurement">
+        <item>Miles</item>
+        <item>Kilos</item>
+    </string-array>
+    <string name="travel">Distance to be traveled: </string>
+    <string name="carChose">Car to order: </string>
+    <string name="driveTotal">Trip Cost is: </string>
 </resources>

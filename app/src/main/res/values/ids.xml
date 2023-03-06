@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="travelDistance" />
+    <item type="id" name="carSpinner"/>
+    <item type="id" name="carImage"/>
+    <item type="id" name="distMeasurement"/>
+    <item type="id" name="requestCar"/>
+    <item type="id" name="distanceToTravel"/>
+    <item type="id" name="totalCost"/>
+</resources>
