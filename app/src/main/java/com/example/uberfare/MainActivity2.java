@@ -19,6 +19,7 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
+        // Create new view finders
         Button goBack = (Button)findViewById(R.id.button2);
         Button requestCar = (Button)findViewById(R.id.button3);
 
@@ -38,6 +39,7 @@ public class MainActivity2 extends AppCompatActivity {
                 totalCost = (TextView)findViewById(R.id.totalCost);
         ImageView carImage = (ImageView) findViewById(R.id.carImage);
 
+        // what car was chosen, car fee?
         if(car.equals("Smart Car")){
             carImage.setImageResource(R.drawable.smartcar);
             Total += 2.00;
@@ -49,6 +51,7 @@ public class MainActivity2 extends AppCompatActivity {
             Total += 5.00;
         }
 
+        // calculate total price
         double parsedMileage = Double.parseDouble(distance.toString());
         Total += (parsedMileage * 3.25);
 
@@ -56,6 +59,7 @@ public class MainActivity2 extends AppCompatActivity {
         carOrder.setText(" "+car);
         totalCost.setText(String.format(" %.2f", Total));
 
+        // go back or proceed
         goBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

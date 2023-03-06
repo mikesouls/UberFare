@@ -15,11 +15,13 @@ public class MainActivity3 extends AppCompatActivity {
 
         TextView driver = (TextView)findViewById(R.id.driverBox);
 
+        // string array created
         String[] name = {"Jeremy Craig", "Lawrence Douglas", "Tucker Carlson", "Jerry Springer", "Harry Jacobs"};
-        int nameLength = name.length;
+        // randomize the driver name using the length of the array
         Random random = new Random();
-        driver.setText(String.format("Your driver %s is on their way", name[random.nextInt(nameLength)]));
+        driver.setText(String.format("Your driver %s is on their way", name[random.nextInt(name.length)]));
 
+        // randomness also applied here too
         TextView randomTime = (TextView)findViewById(R.id.randomETA);
         randomTime.setText(String.format("Possible Estimated Time of Arrival:\n %d Minutes", random.nextInt(60)));
 

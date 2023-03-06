@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // create vars
         Button request = (Button)findViewById(R.id.button);
         Spinner carChoice = (Spinner)findViewById(R.id.carSpinner);
         EditText distance = (EditText)findViewById(R.id.travelDistance);
@@ -27,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         request.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) { // check what car was requested
                 if (carChoice.getSelectedItem().toString().equals("Request Smart Car")) {
                     editCarPrefs.putString("car", "Smart Car");
                     editCarPrefs.putString("carImage", "@drawable/smartcar.webp");
